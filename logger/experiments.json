@@ -1,0 +1,97 @@
+{
+  "_comment": "Experiment scenarios for RD-03D radar tests (chapter 5 of thesis). Switch by pressing keys 1..9 during recording. Press N for 'no scenario' (between-tests pristrelka).",
+  "_version": "1.0",
+
+  "scenarios": [
+    {
+      "key": "1",
+      "id": "static_1m_normal",
+      "description": "Стационарная цель на 1 м по нормали",
+      "n_targets": 1,
+      "range_m": 1.0,
+      "angle_deg": 0.0,
+      "obstacle": "none",
+      "obstacle_thickness_mm": 0
+    },
+    {
+      "key": "2",
+      "id": "static_2m_normal",
+      "description": "Стационарная цель на 2 м по нормали",
+      "n_targets": 1,
+      "range_m": 2.0,
+      "angle_deg": 0.0,
+      "obstacle": "none",
+      "obstacle_thickness_mm": 0
+    },
+    {
+      "key": "3",
+      "id": "static_3m_normal",
+      "description": "Стационарная цель на 3 м по нормали",
+      "n_targets": 1,
+      "range_m": 3.0,
+      "angle_deg": 0.0,
+      "obstacle": "none",
+      "obstacle_thickness_mm": 0
+    },
+    {
+      "key": "4",
+      "id": "static_2m_left30",
+      "description": "Стационарная цель на 2 м под углом -30°",
+      "n_targets": 1,
+      "range_m": 2.0,
+      "angle_deg": -30.0,
+      "obstacle": "none",
+      "obstacle_thickness_mm": 0
+    },
+    {
+      "key": "5",
+      "id": "static_2m_right30",
+      "description": "Стационарная цель на 2 м под углом +30°",
+      "n_targets": 1,
+      "range_m": 2.0,
+      "angle_deg": 30.0,
+      "obstacle": "none",
+      "obstacle_thickness_mm": 0
+    },
+    {
+      "key": "6",
+      "id": "behind_drywall",
+      "description": "Цель на 2 м за гипсокартонной перегородкой 12 мм",
+      "n_targets": 1,
+      "range_m": 2.0,
+      "angle_deg": 0.0,
+      "obstacle": "drywall",
+      "obstacle_thickness_mm": 12
+    },
+    {
+      "key": "7",
+      "id": "behind_wood",
+      "description": "Цель на 2 м за деревянной дверью 40 мм",
+      "n_targets": 1,
+      "range_m": 2.0,
+      "angle_deg": 0.0,
+      "obstacle": "wood",
+      "obstacle_thickness_mm": 40
+    },
+    {
+      "key": "8",
+      "id": "two_persons_split",
+      "description": "Две цели разнесены по углу: на 2 м, ±30°",
+      "n_targets": 2,
+      "range_m": 2.0,
+      "angle_deg": 0.0,
+      "obstacle": "none",
+      "obstacle_thickness_mm": 0
+    },
+    {
+      "key": "9",
+      "id": "walking_arc",
+      "description": "Цель идёт по дуге слева направо на дальности 2 м",
+      "n_targets": 1,
+      "range_m": 2.0,
+      "angle_deg": 0.0,
+      "obstacle": "none",
+      "obstacle_thickness_mm": 0
+    }
+  ]
+}

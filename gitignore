@@ -1,0 +1,66 @@
+
+#  .gitignore — RD-03D Radar sensor project
+#  ESP32 (Arduino/PlatformIO) + Python visualizer + MATLAB analysis
+
+# Recorded experiment data 
+# CSV logs are large and environment-specific — share via Google Drive / NAS
+logs/
+*.csv
+
+# Keep the scenario plan in the repo
+!experiments.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# MATLAB
+*.asv          # auto-save backup files
+*.mex*         # compiled MEX binaries
+*.slx.autosave
+
+# Arduino / PlatformIO
+.pio/          # PlatformIO build cache (can be several hundred MB)
+.pioenvs/
+build/
+*.elf
+*.bin
+*.hex
+*.map
+
+# C / C++ (ESP-IDF)
+*.o
+*.d
+*.a
+*.out
+
+# IDE and OS
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (CLion, PyCharm)
+.idea/
+
+# Windows
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.Spotlight-V100
+
+# Linux
+*~
+.fuse_hidden*
+
+# Secrets (never commit)
+secrets.h       # WiFi credentials, MQTT passwords in firmware
+config.h        # local overrides
+.env            # Python env vars (MQTT broker, port, etc.)
